@@ -56,7 +56,7 @@ export const POST = async (request:any) => {
      const session = await stripe.checkout.sessions.create({
         line_items:stripeProducts,
         mode: 'payment',
-        success_url: `https://arshop1-peach.vercel.app/success`,
+        success_url: `https://arshop1-peach.vercel.app/success/`,
         cancel_url:  `https://arshop1-peach.vercel.app/`,
       });
       
