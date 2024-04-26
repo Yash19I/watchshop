@@ -57,7 +57,7 @@ export const POST = async (request:any) => {
         line_items:stripeProducts,
         mode: 'payment',
         success_url: `https://watchshopyai1008.vercel.app/success`,
-        cancel_url:  `https:///watchshopyai1008.vercel.app/`,
+        cancel_url:  `https://watchshopyai1008.vercel.app/`,
       });
       
     return NextResponse.json({
